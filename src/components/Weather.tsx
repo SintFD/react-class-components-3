@@ -16,10 +16,7 @@ interface State {
 }
 
 export default class Weather extends Component<Props, State> {
-  state: Readonly<{
-    weather: { name: string; temperature: number };
-    isLoading: boolean;
-  }> = {
+  state: Readonly<State> = {
     weather: { name: "", temperature: 0 },
     isLoading: true,
   };
