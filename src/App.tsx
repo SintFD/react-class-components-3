@@ -3,6 +3,7 @@ import "./App.css";
 import Weather from "./components/Weather";
 import Timer from "./components/Timer";
 import Textarea from "./components/Textarea";
+import Activity from "./components/Activity";
 
 export default class App extends Component {
   state: Readonly<{ input: string; search: string }> = {
@@ -42,6 +43,10 @@ export default class App extends Component {
         <div>
           <h1>💾 Автосохранение заметки</h1>
           <Textarea />
+        </div>
+        <div>
+          <h1>4. Индикатор бездействия</h1>
+          <Activity />
         </div>
       </>
     );
