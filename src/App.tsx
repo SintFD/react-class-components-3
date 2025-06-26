@@ -2,6 +2,7 @@ import { Component } from "react";
 import "./App.css";
 import Weather from "./components/Weather";
 import Timer from "./components/Timer";
+import Textarea from "./components/Textarea";
 
 export default class App extends Component {
   state: Readonly<{ input: string; search: string }> = {
@@ -32,9 +33,15 @@ export default class App extends Component {
           </button>
           <Weather city={this.state.search} />
         </div>
+
         <div>
           <h1>⌛ Таймер реакции</h1>
           <Timer />
+        </div>
+
+        <div>
+          <h1>💾 Автосохранение заметки</h1>
+          <Textarea />
         </div>
       </>
     );

@@ -37,7 +37,7 @@ export default class Timer extends Component<{}, State> {
         {this.state.result && (
           <div>
             {" "}
-            Вы отреагировали за: {Math.floor(this.state.result)} миллисекунд !!!
+            Вы отреагировали за: {Math.floor(this.state.result)} миллисекунды!!!
           </div>
         )}
       </>
